@@ -1,3 +1,4 @@
+import ContentArea from "@/components/ContentArea";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <div className="min-h-screen bg-zinc-50 font-sans dark:bg-black">
       <Navbar />
       <main className="flex min-h-screen items-center justify-center pt-16">
-        Main page content
+        <ContentArea />
       </main>
     </div>
   );
