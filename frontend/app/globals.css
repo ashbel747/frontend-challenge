@@ -1,3 +1,36 @@
 @import "tailwindcss";
 
 @variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Brand */
+  --color-brand: #a855f7;
+  --color-brand-hover: #9333ea;
+  --color-brand-muted: #f3e8ff;
+  --color-gradient: linear-gradient(90deg, #a855f7 0%, #7c3aed 100%);
+
+  /* Backgrounds */
+  --color-bg-nav: #f9fafb;
+  --color-bg-page: #f4f4f5;
+  --color-bg-surface: #ffffff;
+
+  /* Content */
+  --color-text-main: #000000;
+  --color-text-header: #18181b;
+  --color-border-subtle: #e4e4e7;
+  --shadow-main: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.dark {
+  --color-brand-hover: #c084fc;
+  --color-brand-muted: #3b0764;
+
+  --color-bg-nav: #000000;
+  --color-bg-page: #09090b;
+  --color-bg-surface: #18181b;
+
+  --color-text-main: #ffffff;
+  --color-text-header: #f4f4f5;
+  --color-border-subtle: #27272a;
+  --shadow-main: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+}
